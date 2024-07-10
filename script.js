@@ -1,19 +1,22 @@
 console.log("hello")
 
-// makes boom sound
+// makes the boom sound
 
 const boomButton = document.getElementById("boomButton")
 let boom = new Audio("./sounds/boom.wav")
 document.addEventListener('keydown', (event) => {
+    this.style.backgroundColor = 'red';
+    this.style.color = 'white'; 
     if (event.key === 'w' || event.key === 'W') {
         boom.play()
     }
+    
 })
 boomButton.addEventListener('click', () => {
     boom.play()
 });
 
-// makes clap sound
+// makes the clap sound
 const clapButton = document.getElementById("clapButton")
 let clap = new Audio("./sounds/clap.wav")
 document.addEventListener('keydown', (event) => {
@@ -25,7 +28,7 @@ clapButton.addEventListener('click', () => {
     clap.play()
 });
 
-// makes hihat sound
+// makes the hihat sound
 const hihatButton = document.getElementById("hihatButton")
 let hihat = new Audio("./sounds/hihat.wav")
 document.addEventListener('keydown', (event) => {
@@ -37,7 +40,7 @@ hihatButton.addEventListener('click', () => {
     hihat.play()
 });
 
-// makes kick sound
+// makes the kick sound
 const kickButton = document.getElementById("kickButton")
 let kick = new Audio("./sounds/kick.wav")
 document.addEventListener('keydown', (event) => {
@@ -49,7 +52,7 @@ kickButton.addEventListener('click', () => {
     kick.play()
 });
 
-// makes openhat sound
+// makes the openhat sound
 const openhatButton = document.getElementById("openhatButton")
 let openhat = new Audio("./sounds/openhat.wav")
 document.addEventListener('keydown', (event) => {
@@ -61,7 +64,7 @@ openhatButton.addEventListener('click', () => {
     openhat.play()
 });
 
-// makes ride sound
+// makes the ride sound
 const rideButton = document.getElementById("rideButton")
 let ride = new Audio("./sounds/ride.wav")
 document.addEventListener('keydown', (event) => {
@@ -73,7 +76,7 @@ rideButton.addEventListener('click', () => {
     ride.play()
 });
 
-// makes snare sound
+// makes the snare sound
 const snareButton = document.getElementById("snareButton")
 let snare = new Audio("./sounds/snare.wav")
 document.addEventListener('keydown', (event) => {
@@ -85,7 +88,7 @@ snareButton.addEventListener('click', () => {
     snare.play()
 });
 
-// makes tink sound
+// makes the tink sound
 const tinkButton = document.getElementById("tinkButton")
 let tink = new Audio("./sounds/tink.wav")
 document.addEventListener('keydown', (event) => {
@@ -97,7 +100,7 @@ tinkButton.addEventListener('click', () => {
     tink.play()
 });
 
-// makes tom sound
+// makes the tom sound
 const tomButton = document.getElementById("tomButton")
 let tom = new Audio("./sounds/tom.wav")
 document.addEventListener('keydown', (event) => {
