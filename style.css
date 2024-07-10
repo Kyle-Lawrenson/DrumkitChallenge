@@ -1,1 +1,12 @@
 * {background-color: cornflowerblue;}
+
+body{
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.drum1, .drum2, .drum3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
