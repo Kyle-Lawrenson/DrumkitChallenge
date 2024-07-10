@@ -1,33 +1,57 @@
-const boom = document.getElementById("boom")
-const clap = document.getElementById("clap")
-const hihat = document.getElementById("hihat")
-const kick = document.getElementById("kick")
-const openhat = document.getElementById("openhat")
-const ride = document.getElementById("ride")
-const snare = document.getElementById("snare")
-const tink = document.getElementById("tink")
-const tom = document.getElementById("tom")
+console.log("hello")
+
+const boomButton = document.getElementById("boomButton")
+const clapButton = document.getElementById("clapButton")
+const hihatButton = document.getElementById("hihatButton")
+const kickButton = document.getElementById("kickButton")
+const openhatButton = document.getElementById("openhatButton")
+const rideButton = document.getElementById("rideButon")
+const snareButton = document.getElementById("snareButton")
+const tinkButton = document.getElementById("tinkButton")
+const tomButton = document.getElementById("tomButton")
+
+let boom = new Audio("./sounds/boom.wav")
+let clap = new Audio("./sounds/clap.wav")
+let hihat = new Audio("./sounds/hihat.wav")
+let kick = new Audio("./sounds/kick.wav")
+let openhat = new Audio("./sounds/openhat.wav")
+let ride = new Audio("./sounds/ride.wav")
+let snare = new Audio("./sounds/snare.wav")
+let tink = new Audio("./sounds/tink.wav")
+let tom = new Audio("./sounds/tom.wav")
+
+
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'w' || event.key === 'W') {
+        boom.play()
+    }})
+boomButton.addEventListener('click', () => {
+    boom.play()
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'a' || event.key === 'A') {
+        clap.play()
+    }
+})
+
+
+clapButton.addEventListener('click', () => {
+    clap.play()
+});
+
+
 
 // asked chatGPT how to do add sound on specific keydown (start)
 
-
-function playAndStopAudio() {
-    boomAudio.play();
-    setTimeout(function() {
-        boomAudio.pause();
-        boomAudio.currentTime = 0;
-    }, 2000); 
-
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'w' || event.key === 'W') {
-        playAndStopAudio();
-    }
-});
-
-document.getElementById('playButton').addEventListener('click', function() {
-    playAndStopAudio();
-});
-
+// function playAndStopAudio(sound) {
+//     sound.play();
+//     // setTimeout(function() {
+//     //     sound.pause();
+//     //     sound.currentTime = 0;
+//     // }, 2000); 
+// }
 
 // chatGPT (end)
 
@@ -54,4 +78,3 @@ document.getElementById('playButton').addEventListener('click', function() {
 //     tink.textContent = event.tink
 //     tom.textContent = event.tom
 // } ) 
-}
