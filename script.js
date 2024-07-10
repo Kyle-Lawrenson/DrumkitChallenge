@@ -5,8 +5,6 @@ console.log("hello")
 const boomButton = document.getElementById("boomButton")
 let boom = new Audio("./sounds/boom.wav")
 document.addEventListener('keydown', (event) => {
-    this.style.backgroundColor = 'red';
-    this.style.color = 'white'; 
     if (event.key === 'w' || event.key === 'W') {
         boom.play()
     }

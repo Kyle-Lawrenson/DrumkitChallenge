@@ -3,6 +3,7 @@
 body{
    color: violet;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 .header{
@@ -19,9 +20,9 @@ body{
 
 button{
     background-color: #DAC2FE; 
-    color: whitesmoke; 
+    color: black; 
     padding: 20px 40px; 
     border: none; 
-    border-radius: 5px; 
+    border-radius: 10px; 
     cursor: pointer; 
 }
