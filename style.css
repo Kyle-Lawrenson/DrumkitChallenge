@@ -1,7 +1,7 @@
 * {background-color: cornflowerblue;} /* changes the background color */
 
 body{
-   color: violet;/* font color */
+   color: darkblue;/* font color */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* font style */
     text-align: center; /* telling it the placement of the text */
 }
@@ -13,18 +13,20 @@ body{
 }
 
 /* this groups up the buttons */
-.drum1, .drum2, .drum3 {
+.boxes {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 button{
     background-color: #DAC2FE; /* changes the background color of the button */
     color: black; /* changes text color within button */
-    padding: 20px 40px; /* adds space around */
+    padding: 10px; /* adds space around */
     border: none; 
     border-radius: 10px; /* size of boorder */
+    width: 200px;
+    height: 150px;
     cursor: pointer; /* makes the curser change to a pointer when the mouse is over the button */
 }
     
