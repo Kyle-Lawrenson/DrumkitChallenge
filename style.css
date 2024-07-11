@@ -15,7 +15,7 @@ body{
 /* this groups up the buttons */
 .boxes {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* makes it wrap on smaller devices */
     flex-direction: row;
     justify-content: space-around;
 }
