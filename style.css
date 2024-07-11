@@ -1,7 +1,7 @@
 * {background-color: cornflowerblue;} /* changes the background color */
 
 body{
-   color: darkblue;/* font color */
+   color: blue;/* font color */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* font style */
     text-align: center; /* telling it the placement of the text */
 }
@@ -15,6 +15,7 @@ body{
 /* this groups up the buttons */
 .boxes {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
@@ -26,7 +27,8 @@ button{
     border: none; 
     border-radius: 10px; /* size of boorder */
     width: 200px;
-    height: 150px;
+    height: 100px;
     cursor: pointer; /* makes the curser change to a pointer when the mouse is over the button */
+    font-size: larger;
 }
     
