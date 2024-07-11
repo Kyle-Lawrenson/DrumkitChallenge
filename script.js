@@ -1,17 +1,16 @@
 console.log("hello")
 
 // makes the boom sound
-
-const boomButton = document.getElementById("boomButton")
-let boom = new Audio("./sounds/boom.wav")
+const boomButton = document.getElementById("boomButton") // looks for mathcing element id
+let boom = new Audio("./sounds/boom.wav") // tells it where to look for the sound file and lets it play it
 document.addEventListener('keydown', (event) => {
     if (event.key === 'w' || event.key === 'W') {
         boom.play()
-    }
-    
+    } // when key pressed it will play sound
 })
 boomButton.addEventListener('click', () => {
     boom.play()
+    // when button is clicked it will play sound
 });
 
 // makes the clap sound

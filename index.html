@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DrumKit</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css"> <!-- this links the html to the css -->
 </head>
 
 <body>
@@ -13,18 +13,18 @@
     <div class="header">
     <h1 id="header">DrumKit</h1>
     </div>
-    <div class="drumKit">
-        <div class="drum1">
+    <div class="drumKit"> <!-- this is grouping all of the buttons -->
+        <div class="drum1"> <!-- this is grouping the buttons 1-3 -->
             <div class="boom">
-                <h3 id="boom1">
-                    <button id="boomButton">W</button>
-                    <audio id="boom1" src="./sounds/boom.wav"></audio>
+                <h3 id="boom1"> <!-- tells it the id of this segment for the js to communicate with it -->
+                    <button id="boomButton">W</button> <!-- creates a button -->
+                    <audio id="boom1" src="./sounds/boom.wav"></audio> <!-- tells it where to look for the sound file -->
                 </h3>
                 <p>BOOM</p>
             </div>
 
             <div class="clap">
-                <h3 id="clap1">
+                <h3 id="clap1"> 
                     <button id="clapButton">A</button>
                     <audio id="clap1" src="./sounds/clap.wav">
                 </h3>
@@ -39,7 +39,7 @@
                 <p>HI-HAT</p>
             </div>
         </div>
-        <div class="drum2">
+        <div class="drum2"> <!-- this is grouping the buttons 4-6 -->
             <div class="kick">
                 <h3 id="kick1">
                     <button id="kickButton">D</button>
@@ -65,7 +65,7 @@
             </div>
         </div>
 
-        <div class="drum3">
+        <div class="drum3"> <!-- this is grouping the buttons 7-9 -->
             <div class="snare">
                 <h3 id="snare1">
                     <button id="snareButton">Z</button>
@@ -92,7 +92,8 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <script src="script.js"></script> <!-- this links the html to the script -->
 </body>
 
 </html>

@@ -1,9 +1,9 @@
-* {background-color: cornflowerblue;}
+* {background-color: cornflowerblue;} /* changes the background color */
 
 body{
-   color: violet;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+   color: violet;/* font color */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* font style */
+    text-align: center; /* telling it the placement of the text */
 }
 
 .header{
@@ -12,6 +12,7 @@ body{
     text-decoration: underline;
 }
 
+/* this groups up the buttons */
 .drum1, .drum2, .drum3 {
     display: flex;
     flex-direction: row;
@@ -19,10 +20,11 @@ body{
 }
 
 button{
-    background-color: #DAC2FE; 
-    color: black; 
-    padding: 20px 40px; 
+    background-color: #DAC2FE; /* changes the background color of the button */
+    color: black; /* changes text color within button */
+    padding: 20px 40px; /* adds space around */
     border: none; 
-    border-radius: 10px; 
-    cursor: pointer; 
+    border-radius: 10px; /* size of boorder */
+    cursor: pointer; /* makes the curser change to a pointer when the mouse is over the button */
 }
+    
