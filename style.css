@@ -1,7 +1,7 @@
 * {background-color: cornflowerblue;} /* changes the background color */
 
 body{
-   color: blue;/* font color */
+    color: blue; /* font color */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* font style */
     text-align: center; /* telling it the placement of the text */
 }
@@ -14,6 +14,7 @@ body{
 
 .drumKit {
     height: 100vh;
+    /* border: 3px solid black; */
 }
 
 /* this groups up the buttons */
@@ -23,18 +24,21 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    /* border: 2px solid gold; */
 }
 
 button{
     background-color: #DAC2FE; /* changes the background color of the button */
     color: black; /* changes text color within button */
-    padding: 10px; /* adds space around */
+    padding: 10px; /* adds space around the buttons*/
     border: none; 
-    border-radius: 10px; /* size of boorder */
-    width: 200px;
-    height: 100px;
+    border-radius: 25px; /* size of boorder */
+    width: 150px;
+    height: 85px;
     cursor: pointer; /* makes the curser change to a pointer when the mouse is over the button */
     font-size: larger;
+    /* border: 2px solid red; */
+    margin-left: 10px;
+    margin-right:10px ;
 }
     
