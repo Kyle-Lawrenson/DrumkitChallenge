@@ -1,6 +1,7 @@
-* {background-color: cornflowerblue;} /* changes the background color */
+/* * {} changes the background color */
 
 body{
+    background-color: cornflowerblue;
     color: blue; /* font color */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* font style */
     text-align: center; /* telling it the placement of the text */
@@ -44,4 +45,5 @@ button{
 }
 .pressed {
     background-color: blue; /* Change to desired color */
+color:indianred
 }
