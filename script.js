@@ -141,9 +141,9 @@ document.addEventListener('keydown', (event) => {
 
     if (event.key !== 'q' && event.key !== 'Q' && event.key !== 'w' && event.key !== 'W' && event.key !== 'e' && event.key !== 'E' && event.key !== 'a' && event.key !== 'A' && event.key !== 's' && event.key !== 'S' && event.key !== 'd' && event.key !== 'D' && event.key !== 'z' && event.key !== 'Z' && event.key !== 'x' && event.key !== 'X' && event.key !== 'c' && event.key !== 'C') {
         messageDiv.innerText = 'INVALID KEY PRESS!'; // this tells it that if none of these keys are pressed the it displays message
-        document.body.style.backgroundColor = 'indianred'; // Change the background color
+        document.body.style.backgroundColor = 'indianred'; // changes the background color
     } else {
         messageDiv.innerText = '';
-        document.body.style.backgroundColor = ''; // Reset the background color
+        document.body.style.backgroundColor = ''; // resets the background color
     }
 });
