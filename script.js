@@ -5,7 +5,8 @@ function handleButtonPress(button) {
     button.classList.add('pressed');
     setTimeout(() => {
         button.classList.remove('pressed');
-    }, 100); // Adjust delay as needed
+    }, 200); // button changes colour for this amount of time
+    
 }
 
 // makes the boom sound
@@ -13,12 +14,13 @@ const boomButton = document.getElementById("boomButton");
 let boom = new Audio("./sounds/boom.wav");
 document.addEventListener('keydown', (event) => {
     if (event.key === 'w' || event.key === 'W') {
-        boom.play();
+        boom.play(); // plays this sound once the event happens in this case its keypress
+        
         handleButtonPress(boomButton);
     }
 });
 boomButton.addEventListener('click', () => {
-    boom.play();
+    boom.play(); // plays this sound once the event happens in this case its click
     handleButtonPress(boomButton);
 });
 
