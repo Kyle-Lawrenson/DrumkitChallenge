@@ -37,8 +37,10 @@ button{
     height: 85px;
     cursor: pointer; /* makes the curser change to a pointer when the mouse is over the button */
     font-size: larger;
-    /* border: 2px solid red; */
+    border: 2px solid black;
     margin-left: 10px; /* creates space to the left of the button */
     margin-right:10px; /* creates space to the right of the button */
 }
-    
+.pressed {
+    background-color: blue; /* Change to desired color */
+}

@@ -1,123 +1,135 @@
 console.log("hello")
 
+// Helper function to handle button press effect
+function handleButtonPress(button) {
+    button.classList.add('pressed');
+    setTimeout(() => {
+        button.classList.remove('pressed');
+    }, 100); // Adjust delay as needed
+}
+
 // makes the boom sound
-const boomButton = document.getElementById("boomButton") // looks for mathcing element id
-let boom = new Audio("./sounds/boom.wav") // tells it where to look for the sound file and lets it play it
+const boomButton = document.getElementById("boomButton");
+let boom = new Audio("./sounds/boom.wav");
 document.addEventListener('keydown', (event) => {
     if (event.key === 'w' || event.key === 'W') {
-        boom.play()
-    } // when key pressed it will play sound
-})
+        boom.play();
+        handleButtonPress(boomButton);
+    }
+});
 boomButton.addEventListener('click', () => {
-    boom.play()
-    // when button is clicked it will play sound
+    boom.play();
+    handleButtonPress(boomButton);
 });
 
 // makes the clap sound
-const clapButton = document.getElementById("clapButton")
-let clap = new Audio("./sounds/clap.wav")
+const clapButton = document.getElementById("clapButton");
+let clap = new Audio("./sounds/clap.wav");
 document.addEventListener('keydown', (event) => {
     if (event.key === 'a' || event.key === 'A') {
-        clap.play()
+        clap.play();
+        handleButtonPress(clapButton);
     }
-})
+});
 clapButton.addEventListener('click', () => {
-    clap.play()
+    clap.play();
+    handleButtonPress(clapButton);
 });
 
 // makes the hihat sound
-const hihatButton = document.getElementById("hihatButton")
-let hihat = new Audio("./sounds/hihat.wav")
+const hihatButton = document.getElementById("hihatButton");
+let hihat = new Audio("./sounds/hihat.wav");
 document.addEventListener('keydown', (event) => {
     if (event.key === 's' || event.key === 'S') {
-        hihat.play()
+        hihat.play();
+        handleButtonPress(hihatButton);
     }
-})
+});
 hihatButton.addEventListener('click', () => {
-    hihat.play()
+    hihat.play();
+    handleButtonPress(hihatButton);
 });
 
 // makes the kick sound
-const kickButton = document.getElementById("kickButton")
-let kick = new Audio("./sounds/kick.wav")
+const kickButton = document.getElementById("kickButton");
+let kick = new Audio("./sounds/kick.wav");
 document.addEventListener('keydown', (event) => {
     if (event.key === 'd' || event.key === 'D') {
-        kick.play()
+        kick.play();
+        handleButtonPress(kickButton);
     }
-})
+});
 kickButton.addEventListener('click', () => {
-    kick.play()
+    kick.play();
+    handleButtonPress(kickButton);
 });
 
 // makes the openhat sound
-const openhatButton = document.getElementById("openhatButton")
-let openhat = new Audio("./sounds/openhat.wav")
+const openhatButton = document.getElementById("openhatButton");
+let openhat = new Audio("./sounds/openhat.wav");
 document.addEventListener('keydown', (event) => {
     if (event.key === 'q' || event.key === 'Q') {
-        openhat.play()
+        openhat.play();
+        handleButtonPress(openhatButton);
     }
-})
+});
 openhatButton.addEventListener('click', () => {
-    openhat.play()
+    openhat.play();
+    handleButtonPress(openhatButton);
 });
 
 // makes the ride sound
-const rideButton = document.getElementById("rideButton")
-let ride = new Audio("./sounds/ride.wav")
+const rideButton = document.getElementById("rideButton");
+let ride = new Audio("./sounds/ride.wav");
 document.addEventListener('keydown', (event) => {
     if (event.key === 'e' || event.key === 'E') {
-        ride.play()
+        ride.play();
+        handleButtonPress(rideButton);
     }
-})
+});
 rideButton.addEventListener('click', () => {
-    ride.play()
+    ride.play();
+    handleButtonPress(rideButton);
 });
 
 // makes the snare sound
-const snareButton = document.getElementById("snareButton")
-let snare = new Audio("./sounds/snare.wav")
+const snareButton = document.getElementById("snareButton");
+let snare = new Audio("./sounds/snare.wav");
 document.addEventListener('keydown', (event) => {
     if (event.key === 'z' || event.key === 'Z') {
-        snare.play()
+        snare.play();
+        handleButtonPress(snareButton);
     }
-})
+});
 snareButton.addEventListener('click', () => {
-    snare.play()
+    snare.play();
+    handleButtonPress(snareButton);
 });
 
 // makes the tink sound
-const tinkButton = document.getElementById("tinkButton")
-let tink = new Audio("./sounds/tink.wav")
+const tinkButton = document.getElementById("tinkButton");
+let tink = new Audio("./sounds/tink.wav");
 document.addEventListener('keydown', (event) => {
     if (event.key === 'x' || event.key === 'X') {
-        tink.play()
+        tink.play();
+        handleButtonPress(tinkButton);
     }
-})
+});
 tinkButton.addEventListener('click', () => {
-    tink.play()
+    tink.play();
+    handleButtonPress(tinkButton);
 });
 
 // makes the tom sound
-const tomButton = document.getElementById("tomButton")
-let tom = new Audio("./sounds/tom.wav")
+const tomButton = document.getElementById("tomButton");
+let tom = new Audio("./sounds/tom.wav");
 document.addEventListener('keydown', (event) => {
     if (event.key === 'c' || event.key === 'C') {
-        tom.play()
+        tom.play();
+        handleButtonPress(tomButton);
     }
-})
-tomButton.addEventListener('click', () => {
-    tom.play()
 });
-
-
-// asked chatGPT how to do add sound on specific keydown (start)
-
-// function playAndStopAudio(sound) {
-//     sound.play();
-//     // setTimeout(function() {
-//     //     sound.pause();
-//     //     sound.currentTime = 0;
-//     // }, 2000);
-// }
-
-// chatGPT (end)
+tomButton.addEventListener('click', () => {
+    tom.play();
+    handleButtonPress(tomButton);
+});
