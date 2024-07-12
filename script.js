@@ -135,3 +135,14 @@ tomButton.addEventListener('click', () => {
     tom.play();
     handleButtonPress(tomButton);
 });
+
+document.addEventListener('keydown', (event) => {
+    const messageDiv = document.getElementById('message');
+
+    if (event.key !== 'q' && event.key !== 'Q' && event.key !== 'w' && event.key !== 'W' && event.key !== 'e' && event.key !== 'E' && event.key !== 'a' && event.key !== 'A' && event.key !== 's' && event.key !== 'S' && event.key !== 'd' && event.key !== 'D' && event.key !== 'z' && event.key !== 'Z' && event.key !== 'x' && event.key !== 'X' && event.key !== 'c' && event.key !== 'C') {
+        messageDiv.innerText = 'Invalid key press!';
+    } else {
+        messageDiv.innerText = '';
+    }
+}); // this tells it that if none of these keys are pressed the it displays message
+
