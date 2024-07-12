@@ -4,6 +4,7 @@ body{
     color: blue; /* font color */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* font style */
     text-align: center; /* telling it the placement of the text */
+    font-weight: bold;
 }
 
 .header{
