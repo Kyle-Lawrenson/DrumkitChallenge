@@ -12,12 +12,18 @@ body{
     text-decoration: underline;
 }
 
+.drumKit {
+    height: 100vh;
+}
+
 /* this groups up the buttons */
 .boxes {
     display: flex;
     flex-wrap: wrap; /* makes it wrap on smaller devices */
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+
 }
 
 button{
