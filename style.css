@@ -30,7 +30,7 @@ body{
 button{
     background-color: #DAC2FE; /* changes the background color of the button */
     color: black; /* changes text color within button */
-    padding: 10px; /* adds space around the buttons*/
+    padding: 10px; /* adds space around the buttons */
     border: none; 
     border-radius: 25px; /* size of boorder */
     width: 150px;
@@ -38,7 +38,7 @@ button{
     cursor: pointer; /* makes the curser change to a pointer when the mouse is over the button */
     font-size: larger;
     /* border: 2px solid red; */
-    margin-left: 10px;
-    margin-right:10px ;
+    margin-left: 10px; /* creates space to the left of the button */
+    margin-right:10px; /* creates space to the right of the button */
 }
     
